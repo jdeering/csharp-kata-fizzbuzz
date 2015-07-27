@@ -61,5 +61,13 @@ namespace FizzBuzz.Tests.Unit_Tests
             var actual = FizzBuzz.Of(10);
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void FizzBuzz_OfTwo_IsTwo()
+        {
+            var expected = "2";
+            var actual = FizzBuzz.Of(2);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
