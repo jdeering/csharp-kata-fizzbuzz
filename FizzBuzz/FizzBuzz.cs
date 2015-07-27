@@ -10,14 +10,7 @@ namespace FizzBuzz
     {
         public static List<string> To(int value)
         {
-            var list = new List<string>();
-            
-            foreach (var i in Enumerable.Range(1, value))
-            {
-                list.Add(FizzBuzz.Of(i));
-            }
-
-            return list;
+            return Enumerable.Range(1, value).Select(i => FizzBuzz.Of(i)).ToList();
         }
 
         public static string Of(int i)
