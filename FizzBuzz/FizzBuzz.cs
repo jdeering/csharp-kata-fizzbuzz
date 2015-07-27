@@ -14,8 +14,7 @@ namespace FizzBuzz
 
             for (var i = 1; i <= value; i++)
             {
-                if(i == 3) list.Add("Fizz");
-                else list.Add(i.ToString());
+                list.Add(FizzBuzz.Of(i));
             }
 
             return list;
