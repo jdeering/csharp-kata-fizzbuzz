@@ -21,5 +21,13 @@ namespace FizzBuzz.Tests.Unit_Tests
             var actual = FizzBuzz.To(3);
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void FizzBuzz_OfOne_IsOne()
+        {
+            var expected = "1";
+            var actual = FizzBuzz.Of(1);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
