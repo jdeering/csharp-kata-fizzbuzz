@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace FizzBuzz.Tests.Unit_Tests
@@ -11,11 +7,11 @@ namespace FizzBuzz.Tests.Unit_Tests
     public class FizzBuzzTests
     {
         [Test]
-        public void FizzBuzz_ToOne_ContainsTheNumberOne()
+        public void FizzBuzz_ToOne_IsJustTheNumberOne()
         {
             var expected = new List<string> { "1" };
             var actual = FizzBuzz.To(1);
-            Assert.AreSame(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
