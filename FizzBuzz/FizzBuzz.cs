@@ -11,8 +11,8 @@ namespace FizzBuzz
         public static List<string> To(int value)
         {
             var list = new List<string>();
-
-            for (var i = 1; i <= value; i++)
+            
+            foreach (var i in Enumerable.Range(1, value))
             {
                 list.Add(FizzBuzz.Of(i));
             }
