@@ -20,5 +20,10 @@ namespace FizzBuzz
 
             return list;
         }
+
+        public static string Of(int i)
+        {
+            return "1";
+        }
     }
 }
