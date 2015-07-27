@@ -8,9 +8,17 @@ namespace FizzBuzz
 {
     public static class FizzBuzz
     {
-        public static List<string> To(int i)
+        public static List<string> To(int value)
         {
-            return new List<string> { "1" };
+            var list = new List<string>();
+
+            for (var i = 1; i <= value; i++)
+            {
+                if(i == 3) list.Add("Fizz");
+                else list.Add(i.ToString());
+            }
+
+            return list;
         }
     }
 }
