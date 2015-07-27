@@ -23,8 +23,8 @@ namespace FizzBuzz
 
         public static string Of(int i)
         {
-            if (i == 3) return "Fizz";
-            if (i == 5) return "Buzz";
+            if (i % 3 == 0) return "Fizz";
+            if (i % 5 == 0) return "Buzz";
             return "1";
         }
     }
